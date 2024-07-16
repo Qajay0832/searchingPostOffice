@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Searching For Post Office</title>
+</head>
+
+<body>
+    <div class="maincontainer" >
+        <div style="width: 50%;">
+            <p class="heading">Post Office Application.</p>
+            <p class="about">This Application Allows you to extract information about the nearest Post Offices, based on
+                your
+                location.</p>
+            <div class="imgContainer"><img class="image" src="./assests/undraw_messenger_re_8bky 1.jpg"></div>
+        </div>
+        <div class="vr"></div>
+        <div class="getStarted">
+            <p class="ipAddress">Your Current IP Address is </p>
+            <button id="startBtn">Get Started</button>
+        </div>
+    </div>
+    <div class="secondContainer" style="display: none;">
+        <div>
+            <div class="var">
+                <p>IP Address :</p>
+                <p id="ipAddress"></p>
+            </div>
+            <div class="variables">
+                <div class="var">
+                    <p>Lat:</p>
+                    <p id="latitude"></p>
+                </div>
+                <div class="var">
+                    <p>City :</p>
+                    <p id="city"></p>
+                </div>
+                <div class="var">
+                    <p>Organisation :</p>
+                    <p id="organisation"></p>
+                </div>
+            </div>
+            <div class="variables">
+                <div class="var">
+                    <p>Long :</p>
+                    <p id="longitude"></p>
+                </div>
+                <div class="var">
+                    <p>Region :</p>
+                    <p id="region"></p>
+                </div>
+                <div class="var">
+                    <p>Hostname :</p>
+                    <p id="hostname"></p>
+                </div>
+            </div>
+        </div>
+        <div class="mapContainer">
+            <p class="mapHeading">Your Current Location</p>
+
+        </div>
+        <div class="moreInfo">
+
+            <p class="infoHeading">More Information About You</p>
+            <div>
+                <div class="var">
+                    <p>Time Zone:</p>
+                    <p id="timezone"></p>
+                </div>
+                <div class="var">
+                    <p>Date And Time:</p>
+                    <p id="dateTime"></p>
+                </div>
+                <div class="var">
+                    <p>Pincode:</p>
+                    <p id="pincode"></p>
+                </div>
+                <div class="var">
+                    <p>Message: Number of pincode(s) found:</p>
+                    <p id="noOfPincode"></p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="infoHeading">Post Offices Near You</p>
+            <input placeholder="Search By Name" id="search" class="searchBar">
+            <div class="cards">
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
