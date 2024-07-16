@@ -71,7 +71,7 @@ function displaycard(postOffices, searchVal) {
     else {
         postOffices.forEach((element, index) => {
             searchVal = searchVal.toLowerCase()
-            if (element.Name.toLowerCase().includes(searchVal) || element.BranchType.toLowerCase().includes(searchVal) || element.District.toLowerCase().includes(searchVal) || element.Division.toLowerCase().includes(searchVal)) {
+            if (element.Name.toLowerCase().includes(searchVal) || element.BranchType.toLowerCase().includes(searchVal) ) {
                 display(element)
             }
         });
